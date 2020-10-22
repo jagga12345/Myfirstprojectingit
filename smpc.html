@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMPC</title>
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="css/demo-complete.css">
+
+     <!-- Jquery -->
+     <script src="js/jquery.min.js"></script>
+ 
+     <!-- Bundles Files -->
+     <script src="js/main.bundle.js"></script>
+     <script src="js/runtime_main.bundle.js"></script>
+     <script src="js/vendors_main.bundle.js"></script>
+
+     <style>
+         @media  (max-width: 768px){
+            .mini-footer nav ul.mini-footer__list.mini-footer__list--meta{
+                display: none;
+            }
+            .mini-footer__language-wrapper{
+                display: none;
+            }
+         }
+         
+     </style>
+</head>
+<body>
+    <!-- Main header -->
+    <header><a title="Skip to main content" class="skip-to-content-link" href="#content-area">Skip to main content</a>
+        <div class="meta-bar">
+            <div class="meta-bar__inner" role="navigation" aria-label="Meta Navigation">
+                <p class="meta-bar__claim">For Healthcare Professionals</p>
+                <div class="meta-bar-navigation">
+                    <ul class="meta-bar-navigation__list">
+                        <li class="meta-bar-navigation__list-item"><a title="Press" class="meta-bar-navigation__list-link" href="?">Press</a></li>
+                        <li class="meta-bar-navigation__list-item"><a title="About Us" class="meta-bar-navigation__list-link" href="?">About Us</a></li>
+                        <li class="meta-bar-navigation__list-item"><a title="Global Website" class="meta-bar-navigation__list-link" href="?">Global Website</a></li>
+                        <li class="meta-bar-navigation__list-item"><a title="Contact" class="meta-bar-navigation__list-link" href="?">Contact</a></li>
+                    </ul>
+                    <div class="meta-bar-navigation__menu">
+                        <div class="meta-bar-navigation__menu-item meta-bar-navigation__menu-item--with-border">
+                            <div class="language-toggle">
+                                <button class="language-toggle__button">
+                                    <svg class="icon language-toggle__icon" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#world" xlink:href="/icons.svg#world"></use>
+                                    </svg><span class="language-toggle__text">English</span>
+                                    <svg class="icon language-toggle__icon language-toggle__turn-round" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#arrow-down" xlink:href="/icons.svg#arrow-down"></use>
+                                    </svg>
+                                </button>
+                                <ul class="language-toggle__container">
+                                    <li class="language-toggle__item"><a href="#" title="French" class="language-toggle__link">French</a></li>
+                                    <li class="language-toggle__item"><a href="#" title="Spanish" class="language-toggle__link">Spanish</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="meta-bar-navigation__menu-item meta-bar-navigation__menu-item--with-border">
+                            <button title="Lorem Ipsum" aria-label="Search on Website" class="meta-bar-navigation__search-btn meta-bar-navigation__btn">
+                                <svg class="icon meta-bar-navigation__search-btn-icon" viewBox="0 0 24 24" role="img">
+                                    <use href="/icons.svg#search" xlink:href="/icons.svg#search"></use>
+                                </svg> <span class="meta-bar-navigation__btn-copy">Search</span></button>
+                        </div>
+                        <div class="meta-bar-navigation__menu-item meta-bar-navigation__menu-item--with-border">
+                            <button title="Login Button" aria-label="Login Button" class="meta-bar-navigation__btn">
+                                <!-- <svg class="icon burger" id="icon-burger" viewBox="0 0 24 24" role="img">
+                                        <defs>
+                                            <g id="menu" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <path
+                                                    d="M21.765 20.557l-5.562-5.614A7.97 7.97 0 009.973 2 7.974 7.974 0 002 9.974a7.97 7.97 0 007.974 7.969A7.946 7.946 0 0015 16.16l5.526 5.578a.852.852 0 00.62.266.844.844 0 00.588-.234.862.862 0 00.031-1.214zM9.974 16.23a6.22 6.22 0 01-4.427-1.833 6.218 6.218 0 01-1.833-4.422 6.2 6.2 0 011.833-4.422A6.22 6.22 0 019.974 3.72 6.22 6.22 0 0114.4 5.552a6.218 6.218 0 011.833 4.422 6.2 6.2 0 01-1.833 4.422 6.22 6.22 0 01-4.427 1.833z"
+                                                    id="Combined-Shape" fill="currentColor" fill-rule="nonzero" />
+                                            </g>
+                                        </defs>
+    
+                                        <use href="#menu" xlink:href="#menu"></use>
+                                    </svg> --><span class="meta-bar-navigation__btn-copy">Login</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header__inner">
+                <a title="Logo of Boehringer Ingelheim" class="header-logo" href="?"><img class="header-logo__asset" alt="Logo of Boehringer Ingelheim" title="Logo of Boehringer Ingelheim" src="img/BI-logo.svg"></a>
+                <div class="menu-list">
+                    <div class="menu-list__item menu-list__search-item">
+                        <button title="Lorem Ipsum" aria-label="Label describes ...." class="header__btn search-overlay-btn">
+                            <svg class="icon icon" viewBox="0 0 24 24" role="img" aria-label="Label describes ....">
+                                <use href="/icons.svg#search" xlink:href="/icons.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="menu-list__item menu-list__navigation-item">
+                        <button class="burger-btn" aria-label="Open menu">
+                            <svg class="icon" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#menu" xlink:href="/icons.svg#menu"></use>
+                            </svg>
+                        </button>
+                        <nav class="navigation" aria-label="Main Navigation" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+                            <div class="navigation__close-btn-container">
+                                <button class="navigation__close-btn" aria-label="Close menu">
+                                    <svg class="icon" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="navigation__list">
+                                <li class="navigation__list__item navigation__list__item--has-submenu">
+                                    <button class="sub-menu__button">Therapeutic Area
+                                        <svg class="icon burger" id="icon-burger" viewBox="0 0 24 24" role="img">
+                                            <defs>
+                                                <g id="menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <path d="M17.426 8.277c.84-.849 2.166.446 1.282 1.294l-6.054 6.161c-.398.357-.928.357-1.282 0l-6.099-6.16c-.84-.849.442-2.144 1.326-1.295l5.392 5.49 5.435-5.49z" id="Combined-Shape" fill="currentColor" fill-rule="nonzero" /> </g>
+                                            </defs>
+                                            <use href="#menu" xlink:href="#menu"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="sub-menu__list">
+                                        <li itemprop="name" class="sub-menu__list-item"><a class="sub-menu__list-item__link" itemprop="url" title="Respiratory" href="url">Respiratory</a>
+                                            <meta itemprop="position" content="1"> </li>
+                                        <li itemprop="name" class="sub-menu__list-item"><a class="sub-menu__list-item__link" itemprop="url" title="Neurology" href="url">Neurology</a>
+                                            <meta itemprop="position" content="2"> </li>
+                                        <li itemprop="name" class="sub-menu__list-item"><a class="sub-menu__list-item__link" itemprop="url" title="Diabetes" href="url">Diabetes</a>
+                                            <meta itemprop="position" content="3"> </li>
+                                    </ul>
+                                </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Diseases" href="url">Diseases</a>
+                                    <meta itemprop="position" content="2"> </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Products" href="url">Products</a>
+                                    <meta itemprop="position" content="3"> </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Medical Resources" href="url">Medical Resources</a>
+                                    <meta itemprop="position" content="3"> </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Patient support" href="url">Patient support</a>
+                                    <meta itemprop="position" content="4"> </li>
+                            </ul>
+                            <div class="login-area">
+                                <button class="button button--primary button--Copy150 button--full-width button--icon-text-left">
+                                    <svg class="icon" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#user" xlink:href="/icons.svg#user"></use>
+                                    </svg>Login</button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <button class="search-overlay__close-btn" aria-label="Close search overlay">
+                <svg class="icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h3 class="search-overlay__headline">Search for product, molecule, disease…</h3>
+            <div class="search-stage">
+                <div class="search-stage__inner">
+                    <input class="search-stage__input" type="text" placeholder="Keyword" aria-label="Search input" value="">
+                    <button class="action-button-reduced" aria-label="Search">
+                        <svg class="icon" viewBox="0 0 24 24" role="img">
+                            <use href="/icons.svg#search" xlink:href="/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Main header -->
+
+    <!-- main slider -->
+    <div class="demo demo--with-grid-layout">
+        <div class="carousel">
+            <ul class="carousel__list">
+                <li aria-hidden="true" data-position="1" class="carousel__item">
+                    <div class="carousel__item__content-box">
+                        <div class="tag">Diabetes type 2</div><span class="carousel__copy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient</span></div>
+                    <div class="carousel__item__image-container"><img class="carousel__item__image-container__image" src="/api/static/test_background_carousel.png" alt=""></div>
+                </li>
+                <li aria-hidden="true" data-position="2" class="carousel__item">
+                    <div class="carousel__item__content-box">
+                        <div class="tag">Event</div><span class="carousel__copy">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</span></div>
+                    <div class="carousel__item__image-container"><img class="carousel__item__image-container__image" src="/api/static/carousel_Image_2.jpg" alt=""></div>
+                </li>
+                <li aria-hidden="false" data-position="3" class="carousel__item carousel__item--active">
+                    <div class="carousel__item__content-box">
+                        <div class="tag">Video</div><span class="carousel__copy">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</span>
+                        <a href="#" title="View video" class="carousel__link">
+                            <svg class="icon" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                            </svg><span>View video</span></a>
+                    </div>
+                    <div class="carousel__item__image-container"><img class="carousel__item__image-container__image" src="/api/static/carousel_Image_3.png" alt=""></div>
+                </li>
+            </ul>
+            <div class="carousel__controls" style="top: auto;">
+                <ul class="carousel__slide-nav">
+                    <li class="carousel__slide-nav__item">
+                        <button disabled="" aria-label="Slide 1" title="Slide 1" class="carousel__slide-nav__circle"></button>
+                    </li>
+                    <li class="carousel__slide-nav__item">
+                        <button disabled="" aria-label="Slide 2" title="Slide 2" class="carousel__slide-nav__circle"></button>
+                    </li>
+                    <li class="carousel__slide-nav__item">
+                        <button disabled="" aria-label="Slide 3" title="Slide 3" class="carousel__slide-nav__circle carousel__slide-nav__circle--active"></button>
+                    </li>
+                </ul>
+                <button class="action-button action-button--is-button action-button--is-button--reduced--primary carousel__button-arrow-back" aria-label="Previous Slide" title="Previous Slide">
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#arrow-back" xlink:href="/icons.svg#arrow-back"></use>
+                    </svg>
+                </button>
+                <button class="action-button action-button--is-button action-button--is-button--reduced--primary carousel__button-arrow-forward" aria-label="Next Slide" title="Next Slide">
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                    </svg>
+                </button>
+                <button class="action-button action-button--is-button action-button--is-button--reduced--default carousel__button-pause" aria-label="Pause Play Button" title="Pause Play Button">
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#pause" xlink:href="/icons.svg#pause"></use>
+                    </svg>
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#play" xlink:href="/icons.svg#play"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="carousel__slide-nav slide-nav-mobile">
+                <li class="carousel__slide-nav__item">
+                    <button disabled="" aria-label="Slide 1" title="Slide 1" class="carousel__slide-nav__circle"></button>
+                </li>
+                <li class="carousel__slide-nav__item">
+                    <button disabled="" aria-label="Slide 2" title="Slide 2" class="carousel__slide-nav__circle"></button>
+                </li>
+                <li class="carousel__slide-nav__item">
+                    <button disabled="" aria-label="Slide 3" title="Slide 3" class="carousel__slide-nav__circle carousel__slide-nav__circle--active"></button>
+                </li>
+            </ul>
+            <div aria-live="polite" aria-atomic="true" class="liveregion visuallyhidden">Slide 3 of 3</div>
+        </div>
+    </div>
+    <!-- End main slider -->
+
+    <!-- page Title -->
+    <div class="page-title page-title--with-button">
+        <div class="page-title__inner">
+            <h1 class="page-title__title">Jentadueto<span style="font-size: 16px; vertical-align: top;"><sup>®</sup></span><span class="page-title__title-subtitle">(linagliptin / metformin)</span>
+            </h1> 
+            </div>
+    </div>
+     <!-- End page title -->
+
+      <!-- Subpage navigation -->
+      <div class="subpage-navigation">
+        <div class="subpage-navigation__grid">
+            <button class="subpage-navigation__arrow subpage-navigation__arrow--left" aria-hidden="true">
+                <svg class="icon subpage-navigation__arrow-icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-back" xlink:href="/icons.svg#arrow-back"></use>
+                </svg>
+            </button>
+            <div class="subpage-navigation__inner">
+                <div class="subpage-navigation__list-wrapper">
+                    <ul class="subpage-navigation__list">
+                        <li class="subpage-navigation__list__item"><a class="subpage-navigation__anchor" href="?" title="Overview">Overview</a></li>
+                        <li class="subpage-navigation__list__item"><a class="subpage-navigation__anchor" href="?" title="SmPC">SmPC</a></li>
+                        <li class="subpage-navigation__list__item"><a class="subpage-navigation__anchor" href="?" title="Trajenta">Trajenta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="subpage-navigation__arrow subpage-navigation__arrow--right" aria-hidden="true">
+                <svg class="icon subpage-navigation__arrow-icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+      <!-- End subpage navigation -->
+
+       <!-- xl content -->
+       <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+        <div class="xl-content">
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h5>Short Version of the EU Summary of Product Characteristics (SmPC)</h5>
+                        <h6>Medicinal Product:</h6>
+                        <p>Jentadueto® 2.5 mg / 850 mg and 2.5 mg / 1,000 mg film-coated tablets. Each tablet contains 2.5 mg of linagliptin and 850 mg of metformin hydrochloride or 2.5 mg of linagliptin and 1,000 mg of metformin hydrochloride.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h6>Indications:</h6>
+                        <p>Adults with type 2 diabetes mellitus as an adjunct to diet and exercise to improve glycaemic control: 1) in patients inadequately controlled on their maximally tolerated dose of metformin alone. 2) in combination with other medicinal products for the treatment of diabetes, including insulin, in patients inadequately controlled with metformin and these medicinal products. 3) in patients already being treated with the combination of linagliptin and metformin as separate tablets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h6>Posology and method of administration: </h6>
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Adults with normal renal function (GFR ≥ 90 ml/min):</strong></p>
+                        <p style="margin-top: 0px;">Adults with type 2 diabetes mellitus as an adjunct to diet and exercise to improve glycaemic control: 1) in patients inadequately controlled on their maximally tolerated dose of metformin alone. 2) in combination with other medicinal products for the treatment of diabetes, including insulin, in patients inadequately controlled with metformin and these medicinal products. 3) in patients already being treated with the combination of linagliptin and metformin as separate tablets.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Patients inadequately controlled on maximal tolerated dose of metformin monotherapy:</strong></p>
+                        <p style="margin-top: 0px;">The usual starting dose of Jentadueto® should provide linagliptin dosed as 2.5 mg twice daily (5 mg total daily dose) plus the dose of metformin already being taken.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Patients switching from co-administration of linagliptin and metformin:</strong></p>
+                        <p style="margin-top: 0px;">Jentadueto® should be initiated at the dose of linagliptin and metformin already being taken.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Patients inadequately controlled on dual combination therapy with the maximal tolerated dose of metformin and a sulphonylurea:</strong></p>
+                        <p style="margin-top: 0px;">The dose of Jentadueto® should provide linagliptin dosed as 2.5 mg twice daily and a dose of metformin similar to the dose already being taken.
+                            When linagliptin plus metformin hydrochloride is used in combination with a sulphonylurea, a lower dose of the sulphonylurea may be
+                            required to reduce the risk of hypoglycaemia.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;"></strong></p>
+                        <p style="margin-top: 0px;"></p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Patients inadequately controlled on dual combination therapy with insulin and the maximal tolerated dose of metformin:</strong></p>
+                        <p style="margin-top: 0px;">The dose of Jentadueto® should provide linagliptin dosed as 2.5 mg twice daily and a dose of metformin similar to the dose already being taken.
+                            When linagliptin plus metformin hydrochloride is used in combination with insulin, a lower dose of insulin may be required to reduce the risk
+                            of hypoglycaemia.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Special populations:</strong>Elderly: Monitoring of renal function is necessary to aid in prevention of metformin-associated lactic acidosis. Clinical experience with patients > 80 years of age is limited and caution should be exercised when treating this population. Renal impairment: GFR should be assessed before initiation of treatment with metformin containing products and at least annually thereafter. In patients at an increased risk of further progression of renal impairment and in the elderly, renal function should be assessed more frequently, e.g. every 3-6 months. Factors that may increase the risk of lactic acidosis should be reviewed before considering initiation of metformin in patients with GFR
+                            < 60 ml/min. If no adequate strength of Jentadueto is available, individual monocomponents should be used instead of the fixed dose combination. Posology for renally impaired patients: GFR: 60-89 ml/min: Metformin - Maximum daily dose is 3000 mg. Dose reduction may be considered in relation to declining renal function. Linagliptin - No dose adjustment. / GFR: 45-59 ml/min: Metformin - Maximum daily dose is 2000 mg. The starting dose is at most half of the maximum dose. Linagliptin - No dose adjustment. / GFR: 30-44 ml/min: Metformin - Maximum daily dose is 1000 mg. The starting dose is at most half of the maximum dose. Linagliptin - No dose adjustment. / GFR: < 30 ml/min: Metformin - contraindicated. Linagliptin - No dose adjustment. Hepatic impairment: not recommended in patients with hepatic impairment due to the active substance metformin. Paediatric population: The safety and efficacy of Jentadueto® in children and adolescents aged 0 to 18 years have not been established.</p>
+                    </div>
+                   
+                </div>
+            </div>
+
+
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h6>Method of administration:</h6>
+                        <p>Jentadueto® should be taken twice daily with meals to reduce the gastrointestinal adverse reactions associated with metformin. If a dose is
+                            missed, it should be taken as soon as the patient remembers. However, a double dose should not be taken at the same time. In that case, the
+                            missed dose should be skipped.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h6>Contraindications:</h6>
+                       <p>Hypersensitivity to the active substances or to any of the excipients; any type of acute metabolic acidosis (such as lactic acidosis, diabetic
+                        ketoacidosis); diabetic pre-coma; Severe renal failure (GFR < 30 ml/min); Acute conditions with the potential to alter renal function (e.g.
+                        dehydration, severe infection, shock); Disease which may cause tissue hypoxia (e.g. decompensated heart failure, respiratory failure, recent
+                        myocardial infarction, shock); Hepatic impairment, acute alcohol intoxication, alcoholism.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h6>Special warnings and precautions for use:</h6>
+                        <p style="margin-top: 0px;">Jentadueto® should not be used in patients with type 1 diabetes.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Hypoglycaemia:</strong></p>
+                        <p style="margin-top: 0px;">Caution is advised when Jentadueto® is used in combination with a sulphonylurea and/or insulin. A dose reduction of the sulphonylurea or
+                            insulin may be considered.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Lactic acidosis:</strong></p>
+                        <p style="margin-top: 0px;">Metformin accumulation occurs at acute worsening of renal function and increases the risk of lactic acidosis. In case of dehydration (severe
+                            diarrhoea or vomiting, fever or reduced fluid intake), metformin should be temporarily discontinued. Medicinal products that can acutely
+                            impair renal function (such as antihypertensives, diuretics and NSAIDs) should be initiated with caution in metformin-treated patients. Other
+                            risk factors for lactic acidosis are excessive alcohol intake, hepatic impairment, inadequately controlled diabetes, ketosis, prolonged fasting
+                            and any conditions associated with hypoxia, as well as concomitant use of medicinal products that may cause lactic acidosis. Patients and/or
+                            caregivers should be informed of the risk of lactic acidosis. Lactic acidosis is characterised by acidotic dyspnea, abdominal pain, muscle
+                            cramps, asthenia and hypothermia followed by coma. In case of suspected symptoms, the patient should stop taking metformin and seek
+                            immediate medical attention. Administration of iodinated contrast agent: Intravascular administration of iodinated contrast agents may lead to
+                            contrast induced nephropathy, resulting in metformin accumulation and an increased risk of lactic acidosis. Metformin should be discontinued
+                            prior to or at the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been reevaluated
+                            and found to be stable.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 0px;"><strong style="font-size: 16px;">Renal function:</strong></p>
+                        <p style="margin-top: 0px;">GFR should be assessed before treatment initiation and regularly thereafter. Metformin is contraindicated in patients with GFR < 30 ml/min and
+                            should be temporarily discontinued in the presence of conditions that alter renal function.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Cardiac function:</strong>Jentadueto® may be used with a regular monitoring of cardiac and renal function. For patients with acute and unstable heart
+                            failure, Jentadueto® is contraindicated.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Surgery:</strong>Metformin must be discontinued at the time of surgery under general, spinal or epidural anesthesia. Therapy may be restarted no
+                            earlier than 48 hours following surgery or resumption of oral nutrition and provided that renal function has been re-evaluated and found to be
+                            stable.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;"></strong></p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Elderly:</strong>Caution should be exercised when treating patients 80 years and older.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Change in clinical status of patients with previously controlled type 2 diabetes:</strong>A patient with previously well controlled type 2 diabetes on
+                            Jentadueto® who develops laboratory abnormalities or clinical illness should be evaluated promptly for evidence of ketoacidosis or lactic
+                            acidosis. If acidosis of either form occurs, Jentadueto must be stopped immediately and other appropriate corrective measures initiated.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Acute pancreatitis:</strong>Use of DPP-4 inhibitors has been associated with a risk of developing acute pancreatitis. Acute pancreatitis has been
+                            observed in patients taking linagliptin. In a cardiovascular and renal safety study (CARMELINA) with median observation period of 2.2 years,
+                            adjudicated acute pancreatitis was reported in 0.3% of patients treated with linagliptin and in 0.1% of patients treated with placebo. Patients
+                            should be informed of the characteristic symptoms of acute pancreatitis. If pancreatitis is suspected, Jentadueto should be discontinued; if
+                            acute pancreatitis is confirmed, Jentadueto® should not be restarted. Caution should be exercised in patients with a history of pancreatitis.</p>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Bullous pemphigoid:</strong>Bullous pemphigoid has been observed in patients taking linagliptin. In the CARMELINA study, bullous pemphigoid was
+                            reported in 0.2% of patients on treatment with linagliptin and in no patient on placebo. If bullous pemphigoid is suspected, Jentadueto® should
+                            be discontinued.</p>
+                    </div>
+
+                    <div class="xl-content__text__richtext">
+                        <h6 style="margin-top: 20px;">Interactions:</h6>
+                        <p>Effects of other medicinal products on linagliptin: full efficacy of linagliptin in combination with strong P-gp inducers might not be achieved,
+                            particularly if these are administered long-term; Combination requiring precautions for use: Glucocorticoids (given by systemic and local
+                            routes), beta-2-agonists, and diuretics have intrinsic hyperglycaemic activity. If necessary, the dose of the anti-hyperglycaemic medicinal
+                            product should be adjusted during therapy with the other medicinal product and on its discontinuation. Some medicinal products can
+                            adversely affect renal function which may increase the risk of lactic acidosis, e.g. NSAIDs, including selective cyclo-oxygenase (COX) II
+                            inhibitors, ACE inhibitors, angiotensin II receptor antagonists and diuretics, especially loop diuretics. When starting or using such products in
+                            combination with metformin, close monitoring of renal function is necessary. Organic cation transporters (OCT): Co-administration of
+                            metformin with: a) Inhibitors of OCT1 (such as verapamil) may reduce efficacy of metformin. b) Inducers of OCT1 (such as rifampicin) may
+                            increase gastrointestinal absorption and efficacy of metformin. c) Inhibitors of OCT2 (such as cimetidine, dolutegravir, ranolazine,
+                            trimethoprime, vandetanib, isavuconazole) may decrease the renal elimination of metformin and thus lead to an increase in metformin plasma
+                            concentration. d) Inhibitors of both OCT1 and OCT2 (such as crizotinib, olaparib) may alter efficacy and renal elimination of metformin.
+                            Caution is therefore advised, especially in patients with renal impairment, when these drugs are coadministered with metformin, as metformin
+                            plasma concentration may increase. If needed, dose adjustment of metformin may be considered as OCT inhibitors/ inducers may alter the
+                            efficacy of metformin. Concomitant use not recommended: Alcohol: Alcohol intoxication is associated with an increased risk of lactic acidosis,
+                            particularly in cases of fasting, malnutrition or hepatic impairment. Iodinated contrast agents: Jentadueto® must be discontinued prior to or at
+                            the time of the imaging procedure and not restarted until at least 48 hours after, provided that renal function has been re-evaluated and found
+                            to be stable.</p>
+                    </div>
+
+                    <div class="xl-content__text__richtext">
+                        <h6 style="margin-top: 20px;">Pregnancy and lactation:</h6>
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Pregnancy:</strong>Jentadueto® should not be used during pregnancy. If the patient plans to become pregnant, or if pregnancy occurs, treatment with Jentadueto
+                            should be discontinued and switched to insulin treatment as soon as possible in order to lower the risk of foetal malformations associated
+                            with abnormal blood glucose levels.</p>
+                    </div>
+
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Breast-feeding:</strong> </p>
+                        <p style="margin-top: 0px;">Metformin is excreted in human milk in small amounts. It is not known whether linagliptin is excreted into human milk. A decision must be
+                            made whether to discontinue breast-feeding or to discontinue/ abstain from Jentadueto® therapy taking into account the benefit of breastfeeding
+                            for the child and the benefit of therapy for the woman.</p>
+                    </div>
+
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Fertility:</strong> </p>
+                        <p style="margin-top: 0px;">The effect of Jentadueto® on human fertility has not been studied.</p>
+                    </div>
+
+                    <div class="xl-content__text__richtext">
+                        <h6 style="margin-top: 20px;">Undesirable effects:</h6>
+                        <p style="margin-bottom: 25px;"><strong style="font-size: 16px;">Linagliptin 5 mg daily + metformin alone (as mono-components or in combination) or as add-on therapy</strong>(in clinical studies, post-marketing experience, or cardiovascular outcome trials): very common (≥ 1/10) - hypoglycaemia (observed in combination with metformin plus sulphonylurea), abdominal pain*; common (≥ 1/100 to < 1/10) - taste disturbance*, diarrhoea, nausea, lipase increased; uncommon ( ≥ 1/1,000 to < 1/100) - nasopharyngitis, hypersensitivity (e.g. bronchial hyperreactivity), cough, decreased appetite, vomiting, constipation (observed in combination with insulin), liver function disorders (in combination of Jentadueto with insulin), rash, pruritis, amylase increased; rare (≥ 1/10,000 to < 1/1,000) - pancreatitis, angioedema, urticaria, bullous pemphigoid; very rare (< 1/10,000) - lactic acidosis*, vitamin B12 deficiency*, hepatitis*, erythema*.</p>
+                        <p style="margin-top: 20px; margin-bottom: 35px;">* Adverse reactions reported in patients who received metformin as monotherapy and that were not observed in patients receiving Jentadueto®.</p>
+                    </div>
+
+                    <div class="xl-content__text__richtext">
+                        <p style="margin-bottom: 25px;">Revision date: October 2019</p>
+                        <p style="padding-left: 20px; margin-top: 0px;"><a href="#" style="text-decoration: none;"><span>  > </span>click here</a> for full Prescribing Information, including Medication Guide. click here New Publication: CARMELINA Elderly Subgroup Analysis [1] Review the long-term safety profile of Trajenta® among age groups. See our infographic Explore the Safety Profile Review data from the CVOT program Discover Jentadueto</p>
+                    </div>
+
+                   
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+        <!-- End xl content -->
+
+        <!-- demo--with-grid-layout -->
+        <main id="main" class="content">
+            <div class="teaser-group">
+                <div class="teaser-group__header-section"></div>
+                <div class="teaser-group__list">
+                    <a class="versatile-teaser" href="#"> <img class="versatile-teaser__img" src="img/core-default11-img.png" alt="Teaser Image">
+                        <div class="versatile-teaser__content">
+                            <div class="versatile-teaser__content__headline">Discover Trajenta</div>
+                            <div style="margin: 40px 0px;"></div>
+                            <p class="versatile-teaser__content__copy">Learn more about our linagliptin monotherapy.</p>
+                        </div>
+                    </a>
+                    <a class="versatile-teaser" href="#"> <img class="versatile-teaser__img" src="img/core-default12-img.png" alt="Teaser Image">
+                        <div class="versatile-teaser__content">
+                            <!-- <div class="tag">Category / Tag</div> -->
+                            <div class="versatile-teaser__content__headline">Explore Extensive Resources</div>
+                            <div style="margin: 40px 0px;"></div>
+                            <p class="versatile-teaser__content__copy">Videos. Infographics. And more.</p>
+                        </div>
+                    </a>
+                    <a class="versatile-teaser" href="#"> <img class="versatile-teaser__img" src="img/core-default13-img.png" alt="Teaser Image">
+                        <div class="versatile-teaser__content">
+                            <!-- <div class="tag">Category / Tag</div> -->
+                            <div class="versatile-teaser__content__headline">Explore the Safety Profile</div>
+                            <div style="margin: 40px 0px;"></div>
+                            <p class="versatile-teaser__content__copy">Review data from the CVOT program</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- End demo--with-grid-layout -->
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb" style="margin-top: 100px;">
+        <ol class="breadcrumb__inner">
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Boehringer Ingelheim" class="breadcrumb__label">Boehringer
+                                                        Ingelheim</a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Homepage" class="breadcrumb__label">HCP
+                                                        Portal</a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Patient Support" class="breadcrumb__label">Products
+                                                    </a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Patient Support" class="breadcrumb__label">Overview
+                                                    </a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+        </ol>
+    </div>
+
+      <!-- End breadcrumb -->
+
+      <!-- footer -->
+        <footer class="mini-footer" itemscope="" itemtype="https://schema.org/WPFooter">
+            <nav aria-label="Footer Navigation">
+                <ul class="mini-footer__list mini-footer__list--meta">
+                    <li class="mini-footer__list-item" itemprop="name"><a title="Press" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">Press</a>
+                        <meta itemprop="position" content="1"> </li>
+                    <li class="mini-footer__list-item" itemprop="name"><a title="About Us" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">About Us</a>
+                        <meta itemprop="position" content="2"> </li>
+                    <li class="mini-footer__list-item" itemprop="name"><a title="Global Website" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">Global Website</a>
+                        <meta itemprop="position" content="3"> </li>
+                    <li class="mini-footer__list-item" itemprop="name"><a title="Contact" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">Contact</a>
+                        <meta itemprop="position" content="4"> </li>
+                </ul>
+                <div class="mini-footer__language-wrapper">
+                    <div class="language-toggle">
+                        <button class="language-toggle__button">
+                            <svg class="icon language-toggle__icon" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#world" xlink:href="/icons.svg#world"> </use>
+                            </svg><span class="language-toggle__text">English</span>
+                            <svg class="icon language-toggle__icon language-toggle__turn-round" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#arrow-down" xlink:href="/icons.svg#arrow-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="language-toggle__container">
+                            <li class="language-toggle__item"><a href="#" title="French" class="language-toggle__link">French</a></li>
+                            <li class="language-toggle__item"><a href="#" title="Spanish" class="language-toggle__link">Spanish</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mini-footer__content">
+                    <ul class="mini-footer__list">
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Sitemap" class="mini-footer__link" href="" itemprop="url">Sitemap</a>
+                            <meta itemprop="position" content="5"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Accessibility Statement" class="mini-footer__link" href="" itemprop="url">Accessibility Statement</a>
+                            <meta itemprop="position" content="6"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Terms of Use" class="mini-footer__link" href="" itemprop="url">Terms of Use</a>
+                            <meta itemprop="position" content="7"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Imprint" class="mini-footer__link" href="" itemprop="url">Imprint</a>
+                            <meta itemprop="position" content="8"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Cookie Policy" class="mini-footer__link" href="" itemprop="url">Cookie Policy</a>
+                            <meta itemprop="position" content="9"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Privacy Policy" class="mini-footer__link" href="" itemprop="url">Privacy Policy</a>
+                            <meta itemprop="position" content="10"> </li>
+                    </ul>
+                </div>
+                <div class="mini-footer__copy">
+                    <div class="mini-footer__copy__line">© 2019 Boehringer Ingelheim do Brazil Química e Farmacêutica</div>
+                </div>
+            </nav>
+        </footer>
+
+
+
+
+</body>
+</html>

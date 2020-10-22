@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERVIEW1</title>
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="css/demo-complete.css">
+
+     <!-- Jquery -->
+     <script src="js/jquery.min.js"></script>
+ 
+     <!-- Bundles Files -->
+     <script src="js/main.bundle.js"></script>
+     <script src="js/runtime_main.bundle.js"></script>
+     <script src="js/vendors_main.bundle.js"></script>
+
+
+     <style>
+        @media  (max-width: 768px){
+           .mini-footer nav ul.mini-footer__list.mini-footer__list--meta{
+               display: none;
+           }
+           .mini-footer__language-wrapper{
+               display: none;
+           }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Main header -->
+    <header><a title="Skip to main content" class="skip-to-content-link" href="#content-area">Skip to main content</a>
+        <div class="meta-bar">
+            <div class="meta-bar__inner" role="navigation" aria-label="Meta Navigation">
+                <p class="meta-bar__claim">For Healthcare Professionals</p>
+                <div class="meta-bar-navigation">
+                    <ul class="meta-bar-navigation__list">
+                        <li class="meta-bar-navigation__list-item"><a title="Press" class="meta-bar-navigation__list-link" href="?">Press</a></li>
+                        <li class="meta-bar-navigation__list-item"><a title="About Us" class="meta-bar-navigation__list-link" href="?">About Us</a></li>
+                        <li class="meta-bar-navigation__list-item"><a title="Global Website" class="meta-bar-navigation__list-link" href="?">Global Website</a></li>
+                        <li class="meta-bar-navigation__list-item"><a title="Contact" class="meta-bar-navigation__list-link" href="?">Contact</a></li>
+                    </ul>
+                    <div class="meta-bar-navigation__menu">
+                        <div class="meta-bar-navigation__menu-item meta-bar-navigation__menu-item--with-border">
+                            <div class="language-toggle">
+                                <button class="language-toggle__button">
+                                    <svg class="icon language-toggle__icon" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#world" xlink:href="/icons.svg#world"></use>
+                                    </svg><span class="language-toggle__text">English</span>
+                                    <svg class="icon language-toggle__icon language-toggle__turn-round" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#arrow-down" xlink:href="/icons.svg#arrow-down"></use>
+                                    </svg>
+                                </button>
+                                <ul class="language-toggle__container">
+                                    <li class="language-toggle__item"><a href="#" title="French" class="language-toggle__link">French</a></li>
+                                    <li class="language-toggle__item"><a href="#" title="Spanish" class="language-toggle__link">Spanish</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="meta-bar-navigation__menu-item meta-bar-navigation__menu-item--with-border">
+                            <button title="Lorem Ipsum" aria-label="Search on Website" class="meta-bar-navigation__search-btn meta-bar-navigation__btn">
+                                <svg class="icon meta-bar-navigation__search-btn-icon" viewBox="0 0 24 24" role="img">
+                                    <use href="/icons.svg#search" xlink:href="/icons.svg#search"></use>
+                                </svg> <span class="meta-bar-navigation__btn-copy">Search</span></button>
+                        </div>
+                        <div class="meta-bar-navigation__menu-item meta-bar-navigation__menu-item--with-border">
+                            <button title="Login Button" aria-label="Login Button" class="meta-bar-navigation__btn">
+                                <svg class="icon burger" id="icon-burger" viewBox="0 0 24 24" role="img">
+                                        <defs>
+                                            <g id="menu" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <path
+                                                    d="M21.765 20.557l-5.562-5.614A7.97 7.97 0 009.973 2 7.974 7.974 0 002 9.974a7.97 7.97 0 007.974 7.969A7.946 7.946 0 0015 16.16l5.526 5.578a.852.852 0 00.62.266.844.844 0 00.588-.234.862.862 0 00.031-1.214zM9.974 16.23a6.22 6.22 0 01-4.427-1.833 6.218 6.218 0 01-1.833-4.422 6.2 6.2 0 011.833-4.422A6.22 6.22 0 019.974 3.72 6.22 6.22 0 0114.4 5.552a6.218 6.218 0 011.833 4.422 6.2 6.2 0 01-1.833 4.422 6.22 6.22 0 01-4.427 1.833z"
+                                                    id="Combined-Shape" fill="currentColor" fill-rule="nonzero" />
+                                            </g>
+                                        </defs>
+    
+                                        <use href="#menu" xlink:href="#menu"></use>
+                                    </svg><span class="meta-bar-navigation__btn-copy">Login</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header__inner">
+                <a title="Logo of Boehringer Ingelheim" class="header-logo" href="?"><img class="header-logo__asset" alt="Logo of Boehringer Ingelheim" title="Logo of Boehringer Ingelheim" src="img/BI-logo.svg"></a>
+                <div class="menu-list">
+                    <div class="menu-list__item menu-list__search-item">
+                        <button title="Lorem Ipsum" aria-label="Label describes ...." class="header__btn search-overlay-btn">
+                            <svg class="icon icon" viewBox="0 0 24 24" role="img" aria-label="Label describes ....">
+                                <use href="/icons.svg#search" xlink:href="/icons.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="menu-list__item menu-list__navigation-item">
+                        <button class="burger-btn" aria-label="Open menu">
+                            <svg class="icon" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#menu" xlink:href="/icons.svg#menu"></use>
+                            </svg>
+                        </button>
+                        <nav class="navigation" aria-label="Main Navigation" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+                            <div class="navigation__close-btn-container">
+                                <button class="navigation__close-btn" aria-label="Close menu">
+                                    <svg class="icon" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="navigation__list">
+                                <li class="navigation__list__item navigation__list__item--has-submenu">
+                                    <button class="sub-menu__button">Therapeutic Area
+                                        <svg class="icon burger" id="icon-burger" viewBox="0 0 24 24" role="img">
+                                            <defs>
+                                                <g id="menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <path d="M17.426 8.277c.84-.849 2.166.446 1.282 1.294l-6.054 6.161c-.398.357-.928.357-1.282 0l-6.099-6.16c-.84-.849.442-2.144 1.326-1.295l5.392 5.49 5.435-5.49z" id="Combined-Shape" fill="currentColor" fill-rule="nonzero" /> </g>
+                                            </defs>
+                                            <use href="#menu" xlink:href="#menu"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="sub-menu__list">
+                                        <li itemprop="name" class="sub-menu__list-item"><a class="sub-menu__list-item__link" itemprop="url" title="Respiratory" href="url">Respiratory</a>
+                                            <meta itemprop="position" content="1"> </li>
+                                        <li itemprop="name" class="sub-menu__list-item"><a class="sub-menu__list-item__link" itemprop="url" title="Neurology" href="url">Neurology</a>
+                                            <meta itemprop="position" content="2"> </li>
+                                        <li itemprop="name" class="sub-menu__list-item"><a class="sub-menu__list-item__link" itemprop="url" title="Diabetes" href="url">Diabetes</a>
+                                            <meta itemprop="position" content="3"> </li>
+                                    </ul>
+                                </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Diseases" href="url">Diseases</a>
+                                    <meta itemprop="position" content="2"> </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Products" href="url">Products</a>
+                                    <meta itemprop="position" content="3"> </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Medical Resources" href="url">Medical Resources</a>
+                                    <meta itemprop="position" content="3"> </li>
+                                <li itemprop="name" class="navigation__list__item"><a itemprop="url" title="Patient support" href="url">Patient support</a>
+                                    <meta itemprop="position" content="4"> </li>
+                            </ul>
+                            <div class="login-area">
+                                <button class="button button--primary button--Copy150 button--full-width button--icon-text-left">
+                                    <svg class="icon" viewBox="0 0 24 24" role="img">
+                                        <use href="/icons.svg#user" xlink:href="/icons.svg#user"></use>
+                                    </svg>Login</button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <button class="search-overlay__close-btn" aria-label="Close search overlay">
+                <svg class="icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h3 class="search-overlay__headline">Search for product, molecule, disease…</h3>
+            <div class="search-stage">
+                <div class="search-stage__inner">
+                    <input class="search-stage__input" type="text" placeholder="Keyword" aria-label="Search input" value="">
+                    <button class="action-button-reduced" aria-label="Search">
+                        <svg class="icon" viewBox="0 0 24 24" role="img">
+                            <use href="/icons.svg#search" xlink:href="/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Main header -->
+
+    <!-- main slider -->
+    <div class="demo demo--with-grid-layout">
+        <div class="carousel" style="margin-top: 0px; margin-bottom: 0px;">
+            <ul class="carousel__list">
+                <li aria-hidden="true" data-position="1" class="carousel__item">
+                    <div class="carousel__item__content-box">
+                        <div class="tag">Diabetes type 2</div><span class="carousel__copy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient</span></div>
+                    <div class="carousel__item__image-container">
+                        <img class="carousel__item__image-container__image" src="img/SUDD_BILLY_D2_S4_111 carousel.png" alt="">
+                    </div>
+                </li>
+                <li aria-hidden="true" data-position="2" class="carousel__item">
+                    <div class="carousel__item__content-box">
+                        <div class="tag">Event</div><span class="carousel__copy">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</span></div>
+                    <div class="carousel__item__image-container">
+                        <img class="carousel__item__image-container__image" src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" alt="">
+                    </div>
+                </li>
+                <li aria-hidden="false" data-position="3" class="carousel__item carousel__item--active">
+                    <div class="carousel__item__content-box">
+                        <div class="tag">Video</div><span class="carousel__copy">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</span>
+                        <a href="#" title="View video" class="carousel__link">
+                            <svg class="icon" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                            </svg><span>View video</span></a>
+                    </div>
+                    <div class="carousel__item__image-container">
+                        <img class="carousel__item__image-container__image" src="img/SUDD_BILLY_D4_S4_125.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="carousel__controls" style="top: auto;">
+                <ul class="carousel__slide-nav">
+                    <li class="carousel__slide-nav__item">
+                        <button disabled="" aria-label="Slide 1" title="Slide 1" class="carousel__slide-nav__circle"></button>
+                    </li>
+                    <li class="carousel__slide-nav__item">
+                        <button disabled="" aria-label="Slide 2" title="Slide 2" class="carousel__slide-nav__circle"></button>
+                    </li>
+                    <li class="carousel__slide-nav__item">
+                        <button disabled="" aria-label="Slide 3" title="Slide 3" class="carousel__slide-nav__circle carousel__slide-nav__circle--active"></button>
+                    </li>
+                </ul>
+                <button class="action-button action-button--is-button action-button--is-button--reduced--primary carousel__button-arrow-back" aria-label="Previous Slide" title="Previous Slide" >
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#arrow-back" xlink:href="/icons.svg#arrow-back"></use>
+                    </svg>
+                </button>
+                <button class="action-button action-button--is-button action-button--is-button--reduced--primary carousel__button-arrow-forward" aria-label="Next Slide" title="Next Slide" id="carousel_forward">
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                    </svg>
+                </button>
+                <button class="action-button action-button--is-button action-button--is-button--reduced--default carousel__button-pause" aria-label="Pause Play Button" title="Pause Play Button">
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#pause" xlink:href="/icons.svg#pause"></use>
+                    </svg>
+                    <svg class="icon action-button__icon" viewBox="0 0 24 24" role="img">
+                        <use href="/icons.svg#play" xlink:href="/icons.svg#play"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="carousel__slide-nav slide-nav-mobile">
+                <li class="carousel__slide-nav__item">
+                    <button disabled="" aria-label="Slide 1" title="Slide 1" class="carousel__slide-nav__circle"></button>
+                </li>
+                <li class="carousel__slide-nav__item">
+                    <button disabled="" aria-label="Slide 2" title="Slide 2" class="carousel__slide-nav__circle"></button>
+                </li>
+                <li class="carousel__slide-nav__item">
+                    <button disabled="" aria-label="Slide 3" title="Slide 3" class="carousel__slide-nav__circle carousel__slide-nav__circle--active"></button>
+                </li>
+            </ul>
+            <div aria-live="polite" aria-atomic="true" class="liveregion visuallyhidden">Slide 3 of 3</div>
+        </div>
+    </div>
+    <!-- End main slider -->
+
+    <!-- page Title -->
+    <div class="page-title page-title--with-button">
+        <div class="page-title__inner">
+            <h1 class="page-title__title">Jentadueto<span style="font-size: 16px; vertical-align: top;"><sup>®</sup></span><span class="page-title__title-subtitle">(linagliptin / metformin)</span>
+            </h1> 
+            </div>
+    </div>
+     <!-- End page title -->
+
+      <!-- Subpage navigation -->
+      <div class="subpage-navigation">
+        <div class="subpage-navigation__grid">
+            <button class="subpage-navigation__arrow subpage-navigation__arrow--left" aria-hidden="true">
+                <svg class="icon subpage-navigation__arrow-icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-back" xlink:href="/icons.svg#arrow-back"></use>
+                </svg>
+            </button>
+            <div class="subpage-navigation__inner">
+                <div class="subpage-navigation__list-wrapper">
+                    <ul class="subpage-navigation__list">
+                        <li class="subpage-navigation__list__item"><a class="subpage-navigation__anchor" href="?" title="Overview">Overview</a></li>
+                        <li class="subpage-navigation__list__item"><a class="subpage-navigation__anchor" href="?" title="SmPC">SmPC</a></li>
+                        <li class="subpage-navigation__list__item"><a class="subpage-navigation__anchor" href="?" title="Trajenta">Trajenta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="subpage-navigation__arrow subpage-navigation__arrow--right" aria-hidden="true">
+                <svg class="icon subpage-navigation__arrow-icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+      <!-- End subpage navigation -->
+
+      <!-- Srtart Xl contetent with image -->
+      <!-- Xl contetent with image first -->
+      <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+        <div class="xl-content">
+            <div class="xl-content__content">
+                <div class="xl-content__text xl-content__text--with-image">
+                    <div class="xl-content__text__figure">
+                        <div class="picture-zoom" itemscope="" itemtype="https://schema.org/ImageObject">
+                            <div class="picture-zoom__body">
+                                <picture class="picture-zoom__picture">
+                                    <source type="image/webp" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp">
+                                    <source type="image/jpeg" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png">
+                                    <source type="image/webp" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp">
+                                    <source type="image/jpeg" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png">
+                                    <source type="image/webp" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp">
+                                    <source type="image/jpeg" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png">
+                                    <source type="image/webp" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp">
+                                    <source type="image/jpeg" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png">
+                                    <source type="image/webp" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp">
+                                    <source type="image/jpeg" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png"><img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="picture-zoom__picture__image ls-is-cached lazyloaded" loading="lazy"></picture>
+                                <meta itemprop="name" content="test pictures">
+                                <meta itemprop="contentUrl" content="/api/static/viewport-img/Placeholder-16-9-Pictures.png">
+                                <meta itemprop="author" content="Boehringer Ingelheim">
+                                <meta itemprop="publisher" content="Boehringer Ingelheim">
+                                <meta itemprop="datePublished" content="2008-01-25">
+                                <meta itemprop="dateModified" content="2019-05-21">
+                                <meta itemprop="expires" content="2022-12-19">
+                                <meta itemprop="description" content="Boehringer Ingelheim - description">
+                                <button class="picture-zoom__zoom-in"><span class="picture-zoom__zoom-in__text"><svg class="icon" viewBox="0 0 24 24" role="img"><use href="/icons.svg#zoom" xlink:href="/icons.svg#zoom"></use></svg> Zoom</span></button>
+                            </div>
+                            <button class="picture-zoom__close" aria-label="Close zoom" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" role="img">
+                                    <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="picture-zoom__modal">
+                            <div class="picture-zoom__modal__content">
+                                <div class="picture-zoom__body">
+                                    <picture class="picture-zoom__picture">
+                                        <source type="image/webp" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp">
+                                        <source type="image/jpeg" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png">
+                                        <source type="image/webp" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp">
+                                        <source type="image/jpeg" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png">
+                                        <source type="image/webp" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp">
+                                        <source type="image/jpeg" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png">
+                                        <source type="image/webp" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp">
+                                        <source type="image/jpeg" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png">
+                                        <source type="image/webp" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp">
+                                        <source type="image/jpeg" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png"><img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="picture-zoom__picture__image lazyload" loading="lazy"></picture>
+                                    <meta itemprop="name" content="test pictures">
+                                    <meta itemprop="contentUrl" content="/api/static/viewport-img/Placeholder-16-9-Pictures.png">
+                                    <meta itemprop="author" content="Boehringer Ingelheim">
+                                    <meta itemprop="publisher" content="Boehringer Ingelheim">
+                                    <meta itemprop="datePublished" content="2008-01-25">
+                                    <meta itemprop="dateModified" content="2019-05-21">
+                                    <meta itemprop="expires" content="2022-12-19">
+                                    <meta itemprop="description" content="Boehringer Ingelheim - description">
+                                    <button class="picture-zoom__zoom-in"><span class="picture-zoom__zoom-in__text"><svg class="icon" viewBox="0 0 24 24" role="img"><use href="/icons.svg#zoom" xlink:href="/icons.svg#zoom"></use></svg> Zoom</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl-content__text__richtext">
+                        <h6>Start Simple. Stay Simple.<sup>1</sup></h6>
+                        <p>Jentadueto® is a single-pill combination of linagliptin and metformin that is available in multiple metformin strengths for dosing flexibility. For metformin-uncontrolled patients, you can start withJentadueto<sup>®</sup> for powerful HbA<sub>1c</sub> reduction1,3 and then transition to the same dose of linagliptin, with Trajenta®, if kidney function declines further and metformin is no longer recommended.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- End Xl contetent with image first -->
+
+         <!-- Xl contetent with image second -->
+      <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+        <div class="xl-content">
+            <div class="xl-content__content">
+                <div class="xl-content__text xl-content__text--with-image" style="direction: rtl;">
+                    <div class="xl-content__text__figure">
+                        <div class="picture-zoom" itemscope="" itemtype="https://schema.org/ImageObject">
+                            <div class="picture-zoom__body">
+                                <picture class="picture-zoom__picture">
+                                    <source type="image/webp" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp">
+                                    <source type="image/jpeg" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png">
+                                    <source type="image/webp" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp">
+                                    <source type="image/jpeg" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png">
+                                    <source type="image/webp" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp">
+                                    <source type="image/jpeg" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png">
+                                    <source type="image/webp" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp">
+                                    <source type="image/jpeg" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png">
+                                    <source type="image/webp" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp">
+                                    <source type="image/jpeg" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png"><img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="picture-zoom__picture__image ls-is-cached lazyloaded" loading="lazy">
+                                </picture>
+                                <meta itemprop="name" content="test pictures">
+                                <meta itemprop="contentUrl" content="/api/static/viewport-img/Placeholder-16-9-Pictures.png">
+                                <meta itemprop="author" content="Boehringer Ingelheim">
+                                <meta itemprop="publisher" content="Boehringer Ingelheim">
+                                <meta itemprop="datePublished" content="2008-01-25">
+                                <meta itemprop="dateModified" content="2019-05-21">
+                                <meta itemprop="expires" content="2022-12-19">
+                                <meta itemprop="description" content="Boehringer Ingelheim - description">
+                                <button class="picture-zoom__zoom-in"><span class="picture-zoom__zoom-in__text"><svg class="icon" viewBox="0 0 24 24" role="img"><use href="/icons.svg#zoom" xlink:href="/icons.svg#zoom"></use></svg> Zoom</span></button>
+                            </div>
+                            <button class="picture-zoom__close" aria-label="Close zoom" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" role="img">
+                                    <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="picture-zoom__modal">
+                            <div class="picture-zoom__modal__content">
+                                <div class="picture-zoom__body">
+                                    <picture class="picture-zoom__picture">
+                                        <source type="image/webp" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp">
+                                        <source type="image/jpeg" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png">
+                                        <source type="image/webp" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp">
+                                        <source type="image/jpeg" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png">
+                                        <source type="image/webp" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp">
+                                        <source type="image/jpeg" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png">
+                                        <source type="image/webp" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp">
+                                        <source type="image/jpeg" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png">
+                                        <source type="image/webp" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp">
+                                        <source type="image/jpeg" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png"><img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="picture-zoom__picture__image lazyload" loading="lazy"></picture>
+                                    <meta itemprop="name" content="test pictures">
+                                    <meta itemprop="contentUrl" content="/api/static/viewport-img/Placeholder-16-9-Pictures.png">
+                                    <meta itemprop="author" content="Boehringer Ingelheim">
+                                    <meta itemprop="publisher" content="Boehringer Ingelheim">
+                                    <meta itemprop="datePublished" content="2008-01-25">
+                                    <meta itemprop="dateModified" content="2019-05-21">
+                                    <meta itemprop="expires" content="2022-12-19">
+                                    <meta itemprop="description" content="Boehringer Ingelheim - description">
+                                    <button class="picture-zoom__zoom-in"><span class="picture-zoom__zoom-in__text"><svg class="icon" viewBox="0 0 24 24" role="img"><use href="/icons.svg#zoom" xlink:href="/icons.svg#zoom"></use></svg> Zoom</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align: left;"><strong style="font-size: 12px;">Placebo-adjusted  mean HbA<sub>1c</sub> change from baseline at 24 weeks<sup>*</sup>,3</strong></p>
+                        
+                    </div>
+                    <div class="xl-content__text__richtext" style="text-align: left;">
+                        <h6>Powerful HbA<sub>1c</sub> Reduction.<sup>3</sup></h6>
+                        <p>Measuring HbA<sub>1c</sub> is the gold standard for observing and treating patients with type 2 diabetes. In a phase III trial that included metformin-uncontrolled patients with a high HbA<sub>1c</sub> baseline, linagliptin 2.5mg BID + metformin 1,000 mg BID resulted in a reduction<sup>*</sup> of 1.7% in HbA<sub>1c</sub>, significantly greater than the 1.2% reduction in patients only taking metformin. Efficacy. Proven.<sup>1,2</sup></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- End Xl contetent with image second -->
+
+         <!-- Xl contetent with image third -->
+      <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+        <div class="xl-content">
+            <div class="xl-content__content">
+                <div class="xl-content__text xl-content__text--with-image">
+                    <div class="xl-content__text__figure">
+                        <div class="picture-zoom" itemscope="" itemtype="https://schema.org/ImageObject">
+                            <div class="picture-zoom__body">
+                                <picture class="picture-zoom__picture">
+                                    <source type="image/webp" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp">
+                                    <source type="image/jpeg" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png">
+                                    <source type="image/webp" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp">
+                                    <source type="image/jpeg" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png">
+                                    <source type="image/webp" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp">
+                                    <source type="image/jpeg" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png">
+                                    <source type="image/webp" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp">
+                                    <source type="image/jpeg" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png">
+                                    <source type="image/webp" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp">
+                                    <source type="image/jpeg" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png"><img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="picture-zoom__picture__image ls-is-cached lazyloaded" loading="lazy"></picture>
+                                <meta itemprop="name" content="test pictures">
+                                <meta itemprop="contentUrl" content="/api/static/viewport-img/Placeholder-16-9-Pictures.png">
+                                <meta itemprop="author" content="Boehringer Ingelheim">
+                                <meta itemprop="publisher" content="Boehringer Ingelheim">
+                                <meta itemprop="datePublished" content="2008-01-25">
+                                <meta itemprop="dateModified" content="2019-05-21">
+                                <meta itemprop="expires" content="2022-12-19">
+                                <meta itemprop="description" content="Boehringer Ingelheim - description">
+                                <button class="picture-zoom__zoom-in"><span class="picture-zoom__zoom-in__text"><svg class="icon" viewBox="0 0 24 24" role="img"><use href="/icons.svg#zoom" xlink:href="/icons.svg#zoom"></use></svg> Zoom</span></button>
+                            </div>
+                            <button class="picture-zoom__close" aria-label="Close zoom" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" role="img">
+                                    <use href="/icons.svg#close" xlink:href="/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="picture-zoom__modal">
+                            <div class="picture-zoom__modal__content">
+                                <div class="picture-zoom__body">
+                                    <picture class="picture-zoom__picture">
+                                        <source type="image/webp" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_small2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_small.webp">
+                                        <source type="image/jpeg" media="(max-width: 559px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_small.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_small.png">
+                                        <source type="image/webp" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium.webp">
+                                        <source type="image/jpeg" media="(min-width: 560px) and (max-width: 1023px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium.png">
+                                        <source type="image/webp" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_medium_large.webp">
+                                        <source type="image/jpeg" media="(min-width: 1024px) and (max-width: 1439px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_medium_large.png">
+                                        <source type="image/webp" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_large2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_large.webp">
+                                        <source type="image/jpeg" media="(min-width: 1440px) and (max-width: 1919px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_large.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_large.png">
+                                        <source type="image/webp" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" srcset="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp 1x, /api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge2x.webp 2x" data-src="/api/static/viewport-img/webp/Placeholder-16-9-Pictures_xlarge.webp">
+                                        <source type="image/jpeg" media="(min-width: 1920px)" data-srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" srcset="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 1x, /api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png 2x" data-src="/api/static/viewport-img/Placeholder-16-9-Pictures_xlarge.png"><img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="picture-zoom__picture__image lazyload" loading="lazy"></picture>
+                                    <meta itemprop="name" content="test pictures">
+                                    <meta itemprop="contentUrl" content="/api/static/viewport-img/Placeholder-16-9-Pictures.png">
+                                    <meta itemprop="author" content="Boehringer Ingelheim">
+                                    <meta itemprop="publisher" content="Boehringer Ingelheim">
+                                    <meta itemprop="datePublished" content="2008-01-25">
+                                    <meta itemprop="dateModified" content="2019-05-21">
+                                    <meta itemprop="expires" content="2022-12-19">
+                                    <meta itemprop="description" content="Boehringer Ingelheim - description">
+                                    <button class="picture-zoom__zoom-in"><span class="picture-zoom__zoom-in__text"><svg class="icon" viewBox="0 0 24 24" role="img"><use href="/icons.svg#zoom" xlink:href="/icons.svg#zoom"></use></svg> Zoom</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl-content__text__richtext">  
+                        <h6>Linagliptin Inside</h6>
+                        <p>The long-term CV and kidney safety profile of linagliptin has been demonstrated through one of the most comprehensive CVOT programs among DPP4i. To learn more about the safety of linagliptin, please visit the Trajenta<sup>®</sup> (linagliptin monotherapy) section of the BI website.</p>
+                        <div class="xl-content__text__controls">
+                            <a title="Lorem Ipsum" class="link-button-wrapper" href="#">
+                                <div class="link-button link-button--secondary link-button--Copy150">Review the CVOT program</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- End Xl contetent with image third -->
+
+
+       <!-- xl content -->
+       <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+        <div class="xl-content">
+            <div class="xl-content__content">
+                <div class="xl-content__text">
+                    <div class="xl-content__text__richtext">
+                        <h6>START and STAY with Linagliptin<sup>†</sup></h6>
+                        <p>Linagliptin is the only globally-available DPP4i that does not require dose reduction based on kidney function‡,1-2,4-8. With linagliptin, you can start simple with Jentadueto<sup>®</sup> 2.5mg BID and, when appropriate, continue with Trajenta<sup>®</sup> 5mg QD (once-daily), or the same total daily dose of linagliptin. Start simple, stay simple. Always. Regardless of kidney function.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- End xl content -->
+
+        <!-- Full width image -->
+        <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+            <div class="xl-content">
+                <div class="xl-content__content">
+                    <div class="xl-content__full-width-image">
+                        <figure class="xl-content__full-width-image__figure" role="group" aria-labelledby="A_UNIQUE_ID_FOR_THIS_FIGCAPTION_image_3" style="    width: 90%;margin: auto;">
+                            <img src="img/Safety Page images-01.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="xl-content__full-width-image__figure-image image-with-border">
+                            <!-- <figcaption id="A_UNIQUE_ID_FOR_THIS_FIGCAPTION_image_3" class="xl-content__full-width-image__figure-caption">Description text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption> -->
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End full width image -->
+
+
+        <!-- demo--with-grid-layout -->
+        <main id="main" class="content">
+            <div class="teaser-group">
+                <div class="teaser-group__header-section"></div>
+                <div class="teaser-group__list">
+                    <a class="versatile-teaser" href="#"> <img class="versatile-teaser__img" src="img/core-default11-img.png" alt="Teaser Image">
+                        <div class="versatile-teaser__content">
+                            <div class="versatile-teaser__content__headline">Discover Trajenta</div>
+                            <div style="margin: 40px 0px;"></div>
+                            <p class="versatile-teaser__content__copy">Learn more about our linagliptin monotherapy.</p>
+                        </div>
+                    </a>
+                    <a class="versatile-teaser" href="#"> <img class="versatile-teaser__img" src="img/core-default12-img.png" alt="Teaser Image">
+                        <div class="versatile-teaser__content">
+                            <!-- <div class="tag">Category / Tag</div> -->
+                            <div class="versatile-teaser__content__headline">Explore Extensive Resources</div>
+                            <div style="margin: 40px 0px;"></div>
+                            <p class="versatile-teaser__content__copy">Videos. Infographics. And more.</p>
+                        </div>
+                    </a>
+                    <a class="versatile-teaser" href="#"> <img class="versatile-teaser__img" src="img/core-default13-img.png" alt="Teaser Image">
+                        <div class="versatile-teaser__content">
+                            <!-- <div class="tag">Category / Tag</div> -->
+                            <div class="versatile-teaser__content__headline">Explore the Safety Profile</div>
+                            <div style="margin: 40px 0px;"></div>
+                            <p class="versatile-teaser__content__copy">Review data from the CVOT program</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- End demo--with-grid-layout -->
+
+        <!-- xl content -->
+        <div class="demo demo--with-grid-layout">
+            <div class="xl-content">
+                <div class="xl-content__content">  
+                    <div class="xl-content__text">
+                        <div class="xl-content__text__richtext">
+                            <h6>Adverse Events</h6>
+                            <p>Jentadueto<sup>®</sup> has an established safety and tolerability profile.2 The risk of hypoglycaemia with linagliptin alone (Trajenta<sup>®</sup>) or with linagliptin + metformin (Jentadueto<sup>®</sup>) is low and the incidence was comparable to placebo. The adverse drug reactions for linagliptin + metformin as described in the EU SmPC are provided in the table below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- End xl content -->
+
+   <!-- Full width image -->
+    <div class="demo demo--with-grid-layout" style="padding-top: 0px; padding-bottom: 0;">
+        <div class="xl-content">
+            <h3 class="xl-content__headline" style="margin-top: 0px;">Adverse reactions by treatment regimen</h3>
+            <div class="xl-content__content">
+                <div class="xl-content__full-width-image">
+                    <figure class="xl-content__full-width-image__figure" role="group" aria-labelledby="A_UNIQUE_ID_FOR_THIS_FIGCAPTION_image_3" style="    width: 90%;margin: auto;">
+                        <img src="img/Safety table 02.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="xl-content__full-width-image__figure-image image-with-border">
+                        <figcaption id="A_UNIQUE_ID_FOR_THIS_FIGCAPTION_image_3" class="xl-content__full-width-image__figure-caption" style="grid-column: 2 / span 20;">
+                            <strong>Very common: ≥ 1/10, common: ≥ 1/100 to &lt;1/10, uncommon: ≥ 1/1,000 to &lt; 1/100, rare: ≥ 1/10,000 to &lt; 1/1,000, very rare: &lt;1/10,000 or not known: cannot be estimated from the available data.</strong> 
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End full width image -->
+
+    <!-- footnote -->
+    <div class="demo demo--with-grid-layout">
+        <div class="demo-richttext demo-copy-150" style="padding: 0 55px;">
+            <h2 class="demo-h2">Footnotes</h2>
+            <p>BID: twice daily; CKD: chronic kidney disease; CVOT: cardiovascular outcomes trial; DPP4i: dipeptidyl peptidase-4 inhibitor; GFR: glomerular filtration rate; QD: once daily; SPC: single-pill combination</p>
+            <p>* 24-week, double-blind, placebo-controlled, Phase III trial. Two arms received linagliptin 2.5 mg twice daily (BID) + either low (500 mg) or high (1,000 mg) dose metformin BID. Four arms received linagliptin 5 mg once daily, metformin 500 mg or 1,000 mg BID or placebo. Patients with HbA 1c ≥11.0% were not eligible for randomisation and received open-label linagliptin + high-dose metformin. High baseline defined as HbA 1c >8.5% to
+                <11.0%.</p>
+                    <p>† The maximum recommended daily dose ofJentadueto<sup>®</sup> contains 5 mg of linagliptin plus 2,000 mg of metformin hydrochloride.</p>
+                    <p>‡Jentadueto<sup>®</sup> must not be used in patients with GFR < 45 mL/min due to the active substance metformin. Linagliptin may be continued as a single entity tablet (Trajenta®) at the same total daily dose of 5 mg if metformin is discontinued due to evidence of kidney impairment.</p>
+                    <p>a Based on post-marketing experience</p>
+                    <p>b Based on lipase elevations >3xULN observed in clinical trials</p>
+                    <p>c Based on the linagliptin cardiovascular and renal safety study (CARMELINA<sup>®</sup>)</p>
+        </div>
+        <section class="footnotes" role="doc-endnotes">
+            <h2 class="footnotes__headline">References</h2>
+            <ol class="footnotes__list">
+                <li class="footnotes__list-item" role="doc-endnote" id="fn01">
+                    <a href="#ref01" title="Jump to footnote reference 1" class="footnotes__backlink" role="doc-backlink">1.</a>
+                    <span class="footnotes__richtext">Jentadueto® EMA Summary of Product Characteristics, October 2019.</span> 
+                </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn02"><a href="#ref02" title="Jump to footnote reference 2" class="footnotes__backlink" role="doc-backlink">2.</a><span class="footnotes__richtext">Trajenta® EMA Summary of Product
+                                                                Characteristics, October
+                                                                2019.</span> </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn03"><a href="#ref03" title="Jump to footnote reference 3" class="footnotes__backlink" role="doc-backlink">3.</a><span class="footnotes__richtext">Haak T, et al. Diabetes Obes Metab.
+                                                                2012;14:565–74.</span> </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn04"><a href="#ref04" title="Jump to footnote reference 4" class="footnotes__backlink" role="doc-backlink">4.</a><span class="footnotes__richtext">Glucophage® EMC Summary of Product
+                                                                Characteristics.</span> </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn05"><a href="#ref05" title="Jump to footnote reference 5" class="footnotes__backlink" role="doc-backlink">5.</a><span class="footnotes__richtext">Janumet® EMA Summary of Product
+                                                                Characteristics.</span> </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn06"><a href="#ref06" title="Jump to footnote reference 6" class="footnotes__backlink" role="doc-backlink">6.</a><span class="footnotes__richtext">Eucreas® EMA Summary of Product
+                                                                Characteristics.</span> </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn07"><a href="#ref07" title="Jump to footnote reference 7" class="footnotes__backlink" role="doc-backlink">7.</a><span class="footnotes__richtext">Haak T, et al. Diabetes Obes Metab.
+                                                                2012;14:565–74.</span> </li>
+                <li class="footnotes__list-item" role="doc-endnote" id="fn08"><a href="#ref08" title="Jump to footnote reference 8" class="footnotes__backlink" role="doc-backlink">8.</a><span class="footnotes__richtext">Vipdomet® EMA Summary of Product
+                                                                Characteristics.</span> </li>
+            </ol>
+        </section>
+        <section class="footnotes" role="doc-endnotes" style="padding-top: 40px !important;"> </section>
+    </div>
+
+    <!-- End footnote -->
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <ol class="breadcrumb__inner">
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Boehringer Ingelheim" class="breadcrumb__label">Boehringer
+                                                        Ingelheim</a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Homepage" class="breadcrumb__label">HCP
+                                                        Portal</a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Patient Support" class="breadcrumb__label">Products
+                                                    </a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+            <li class="breadcrumb__level-wrapper"><a href="#" title="Patient Support" class="breadcrumb__label">Overview
+                                                    </a>
+                <svg class="icon breadcrumb__icon" viewBox="0 0 24 24" role="img">
+                    <use href="/icons.svg#arrow-forward" xlink:href="/icons.svg#arrow-forward"></use>
+                </svg>
+            </li>
+        </ol>
+    </div>
+
+      <!-- End breadcrumb -->
+
+      <!-- footer -->
+        <footer class="mini-footer" itemscope="" itemtype="https://schema.org/WPFooter">
+            <nav aria-label="Footer Navigation">
+                <ul class="mini-footer__list mini-footer__list--meta">
+                    <li class="mini-footer__list-item" itemprop="name"><a title="Press" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">Press</a>
+                        <meta itemprop="position" content="1"> </li>
+                    <li class="mini-footer__list-item" itemprop="name"><a title="About Us" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">About Us</a>
+                        <meta itemprop="position" content="2"> </li>
+                    <li class="mini-footer__list-item" itemprop="name"><a title="Global Website" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">Global Website</a>
+                        <meta itemprop="position" content="3"> </li>
+                    <li class="mini-footer__list-item" itemprop="name"><a title="Contact" class="mini-footer__link mini-footer__link--meta" href="" itemprop="url">Contact</a>
+                        <meta itemprop="position" content="4"> </li>
+                </ul>
+                <div class="mini-footer__language-wrapper">
+                    <div class="language-toggle">
+                        <button class="language-toggle__button">
+                            <svg class="icon language-toggle__icon" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#world" xlink:href="/icons.svg#world"> </use>
+                            </svg><span class="language-toggle__text">English</span>
+                            <svg class="icon language-toggle__icon language-toggle__turn-round" viewBox="0 0 24 24" role="img">
+                                <use href="/icons.svg#arrow-down" xlink:href="/icons.svg#arrow-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="language-toggle__container">
+                            <li class="language-toggle__item"><a href="#" title="French" class="language-toggle__link">French</a></li>
+                            <li class="language-toggle__item"><a href="#" title="Spanish" class="language-toggle__link">Spanish</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mini-footer__content">
+                    <ul class="mini-footer__list">
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Sitemap" class="mini-footer__link" href="" itemprop="url">Sitemap</a>
+                            <meta itemprop="position" content="5"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Accessibility Statement" class="mini-footer__link" href="" itemprop="url">Accessibility Statement</a>
+                            <meta itemprop="position" content="6"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Terms of Use" class="mini-footer__link" href="" itemprop="url">Terms of Use</a>
+                            <meta itemprop="position" content="7"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Imprint" class="mini-footer__link" href="" itemprop="url">Imprint</a>
+                            <meta itemprop="position" content="8"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Cookie Policy" class="mini-footer__link" href="" itemprop="url">Cookie Policy</a>
+                            <meta itemprop="position" content="9"> </li>
+                        <li class="mini-footer__list-item" itemprop="name"><a title="Privacy Policy" class="mini-footer__link" href="" itemprop="url">Privacy Policy</a>
+                            <meta itemprop="position" content="10"> </li>
+                    </ul>
+                </div>
+                <div class="mini-footer__copy">
+                    <div class="mini-footer__copy__line">© 2019 Boehringer Ingelheim do Brazil Química e Farmacêutica</div>
+                </div>
+            </nav>
+        </footer>
+
+
+</body>
+</html>
